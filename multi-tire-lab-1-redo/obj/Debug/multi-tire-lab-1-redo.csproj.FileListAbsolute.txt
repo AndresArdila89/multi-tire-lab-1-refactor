@@ -1,0 +1,11 @@
+C:\Users\andre\OneDrive\Desktop\3rd semester\Multi-tire Applications\Labs\multi-tire-lab-1-redo\multi-tire-lab-1-redo\multi-tire-lab-1-redo\bin\Debug\multi-tire-lab-1-redo.exe.config
+C:\Users\andre\OneDrive\Desktop\3rd semester\Multi-tire Applications\Labs\multi-tire-lab-1-redo\multi-tire-lab-1-redo\multi-tire-lab-1-redo\bin\Debug\multi-tire-lab-1-redo.exe
+C:\Users\andre\OneDrive\Desktop\3rd semester\Multi-tire Applications\Labs\multi-tire-lab-1-redo\multi-tire-lab-1-redo\multi-tire-lab-1-redo\bin\Debug\multi-tire-lab-1-redo.pdb
+C:\Users\andre\OneDrive\Desktop\3rd semester\Multi-tire Applications\Labs\multi-tire-lab-1-redo\multi-tire-lab-1-redo\multi-tire-lab-1-redo\obj\Debug\multi-tire-lab-1-redo.csprojAssemblyReference.cache
+C:\Users\andre\OneDrive\Desktop\3rd semester\Multi-tire Applications\Labs\multi-tire-lab-1-redo\multi-tire-lab-1-redo\multi-tire-lab-1-redo\obj\Debug\multi_tire_lab_1_redo.Properties.Resources.resources
+C:\Users\andre\OneDrive\Desktop\3rd semester\Multi-tire Applications\Labs\multi-tire-lab-1-redo\multi-tire-lab-1-redo\multi-tire-lab-1-redo\obj\Debug\multi_tire_lab_1_redo.test.resources
+C:\Users\andre\OneDrive\Desktop\3rd semester\Multi-tire Applications\Labs\multi-tire-lab-1-redo\multi-tire-lab-1-redo\multi-tire-lab-1-redo\obj\Debug\multi-tire-lab-1-redo.csproj.GenerateResource.cache
+C:\Users\andre\OneDrive\Desktop\3rd semester\Multi-tire Applications\Labs\multi-tire-lab-1-redo\multi-tire-lab-1-redo\multi-tire-lab-1-redo\obj\Debug\multi-tire-lab-1-redo.csproj.CoreCompileInputs.cache
+C:\Users\andre\OneDrive\Desktop\3rd semester\Multi-tire Applications\Labs\multi-tire-lab-1-redo\multi-tire-lab-1-redo\multi-tire-lab-1-redo\obj\Debug\multi-tire-lab-1-redo.exe
+C:\Users\andre\OneDrive\Desktop\3rd semester\Multi-tire Applications\Labs\multi-tire-lab-1-redo\multi-tire-lab-1-redo\multi-tire-lab-1-redo\obj\Debug\multi-tire-lab-1-redo.pdb
+C:\Users\andre\OneDrive\Desktop\3rd semester\Multi-tire Applications\Labs\multi-tire-lab-1-redo\multi-tire-lab-1-redo\multi-tire-lab-1-redo\obj\Debug\multi_tire_lab_1_redo.GUI.FormEmployees.resources
