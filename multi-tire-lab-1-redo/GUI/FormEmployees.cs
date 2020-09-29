@@ -41,6 +41,45 @@ namespace multi_tire_lab_1_redo.GUI
             }
         }
 
+        private void LoadTable(String name)
+        {
+            List<Employee> empList = new List<Employee>();
+
+            Employee emp = new Employee();
+
+            empList = emp.SearchEmployee(name);
+            listViewEmployees.Items.Clear();
+            foreach (Employee empT in empList)
+            {
+
+                ListViewItem item = new ListViewItem(empT.EmployeeId.ToString());
+
+                item.SubItems.Add(empT.FirstName);
+                item.SubItems.Add(empT.LastName);
+                item.SubItems.Add(empT.JobTitle);
+
+                listViewEmployees.Items.Add(item);
+
+            }
+        }
+
+        private void LoadTable(int empId)
+        {
+            Employee emp = new Employee();
+
+            emp = emp.SearchEmployee(empId);
+            listViewEmployees.Items.Clear();
+                
+            ListViewItem item = new ListViewItem(emp.EmployeeId.ToString());
+            
+            item.SubItems.Add(emp.FirstName);                
+            item.SubItems.Add(emp.LastName);          
+            item.SubItems.Add(emp.JobTitle);
+            listViewEmployees.Items.Add(item);
+    
+        }
+
+
         private void ClearAllTextBox()
         {
             textBoxEmpID.Clear();
@@ -49,12 +88,15 @@ namespace multi_tire_lab_1_redo.GUI
 
             comboBoxJobTitle.SelectedItem = null;
             comboBoxJobTitle.SelectedText = "--select--";
+
+            
         }
 
         private void FormEmployees_Load(object sender, EventArgs e)
         {
             comboBoxJobTitle.SelectedItem = null;
             comboBoxJobTitle.SelectedText = "--select--";
+            comboBoxSearchBy.SelectedIndex = 0;
             LoadTable();
 
 
@@ -133,6 +175,26 @@ namespace multi_tire_lab_1_redo.GUI
             emp.NewEmployee(emp);
             LoadTable();
             ClearAllTextBox();
+        }
+
+        private void buttonSearch_Click(object sender, EventArgs e)
+        {
+            Employee emp = new Employee();
+            int searchType = comboBoxSearchBy.SelectedIndex;
+            
+            if(searchType == 0)
+            {
+                LoadTable(Convert.ToInt32(textBoxSearch.Text));
+            }
+            else
+            {
+                LoadTable(textBoxSearch.Text);
+            }
+        }
+
+        private void comboBoxSearchBy_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            labelSearchTitle.Text = comboBoxSearchBy.SelectedItem.ToString();
         }
     }
 }

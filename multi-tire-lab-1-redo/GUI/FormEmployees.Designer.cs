@@ -49,7 +49,7 @@
             this.buttonDisplayAll = new System.Windows.Forms.Button();
             this.buttonSearch = new System.Windows.Forms.Button();
             this.textBoxSearch = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxSearchBy = new System.Windows.Forms.ComboBox();
             this.listViewEmployees = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -239,7 +239,7 @@
             this.panel3.Controls.Add(this.buttonDisplayAll);
             this.panel3.Controls.Add(this.buttonSearch);
             this.panel3.Controls.Add(this.textBoxSearch);
-            this.panel3.Controls.Add(this.comboBox2);
+            this.panel3.Controls.Add(this.comboBoxSearchBy);
             this.panel3.Controls.Add(this.listViewEmployees);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel3.Location = new System.Drawing.Point(220, 60);
@@ -285,6 +285,7 @@
             this.buttonSearch.TabIndex = 9;
             this.buttonSearch.Text = "Search";
             this.buttonSearch.UseVisualStyleBackColor = true;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // textBoxSearch
             // 
@@ -293,17 +294,18 @@
             this.textBoxSearch.Size = new System.Drawing.Size(191, 20);
             this.textBoxSearch.TabIndex = 8;
             // 
-            // comboBox2
+            // comboBoxSearchBy
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.comboBoxSearchBy.FormattingEnabled = true;
+            this.comboBoxSearchBy.Items.AddRange(new object[] {
             "Employee ID",
             "First Name",
             "Last Name"});
-            this.comboBox2.Location = new System.Drawing.Point(28, 302);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(162, 21);
-            this.comboBox2.TabIndex = 8;
+            this.comboBoxSearchBy.Location = new System.Drawing.Point(28, 302);
+            this.comboBoxSearchBy.Name = "comboBoxSearchBy";
+            this.comboBoxSearchBy.Size = new System.Drawing.Size(162, 21);
+            this.comboBoxSearchBy.TabIndex = 8;
+            this.comboBoxSearchBy.SelectedIndexChanged += new System.EventHandler(this.comboBoxSearchBy_SelectedIndexChanged);
             // 
             // listViewEmployees
             // 
@@ -385,7 +387,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBoxSearchBy;
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.Button buttonUpdate;
