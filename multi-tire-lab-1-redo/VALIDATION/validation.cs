@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace multi_tire_lab_1_redo.VALIDATION
 {
-    public static class validation
+    public static class Validation
     {
         public static bool IsValidId(string input)
         {

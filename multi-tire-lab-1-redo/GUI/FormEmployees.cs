@@ -167,14 +167,34 @@ namespace multi_tire_lab_1_redo.GUI
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            Employee emp = new Employee();
-            emp.FirstName = textBoxEmpFirstName.Text;
-            emp.LastName = textBoxEmpLastName.Text;
-            emp.JobTitle = comboBoxJobTitle.SelectedItem.ToString();
+            
+            
 
-            emp.NewEmployee(emp);
-            LoadTable();
-            ClearAllTextBox();
+            if (!Validation.IsValidName(textBoxEmpFirstName.Text))
+            {
+                MessageBox.Show("Invalid First Name");
+                textBoxEmpFirstName.Clear();
+                textBoxEmpFirstName.Focus();
+
+            }else if (!Validation.IsValidName(textBoxEmpLastName.Text))
+            {
+                MessageBox.Show("Invalid First Name");
+                textBoxEmpLastName.Clear();
+                textBoxEmpLastName.Focus();
+            }
+            else
+            {
+                Employee emp = new Employee();
+                emp.FirstName = textBoxEmpFirstName.Text;
+                emp.LastName = textBoxEmpLastName.Text;
+                emp.JobTitle = comboBoxJobTitle.SelectedItem.ToString();
+
+                emp.NewEmployee(emp);
+                LoadTable();
+                ClearAllTextBox();
+            }
+
+                
         }
 
         private void buttonSearch_Click(object sender, EventArgs e)
@@ -195,6 +215,8 @@ namespace multi_tire_lab_1_redo.GUI
         private void comboBoxSearchBy_SelectedIndexChanged(object sender, EventArgs e)
         {
             labelSearchTitle.Text = comboBoxSearchBy.SelectedItem.ToString();
+            textBoxSearch.Clear();
+            textBoxSearch.Focus();
         }
     }
 }
