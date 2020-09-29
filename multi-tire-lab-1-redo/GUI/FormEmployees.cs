@@ -110,6 +110,30 @@ namespace multi_tire_lab_1_redo.GUI
             ClearAllTextBox();
 
         }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+      
+
+        private void buttonDisplayAll_Click(object sender, EventArgs e)
+        {
+            LoadTable();
+        }
+
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+            Employee emp = new Employee();
+            emp.FirstName = textBoxEmpFirstName.Text;
+            emp.LastName = textBoxEmpLastName.Text;
+            emp.JobTitle = comboBoxJobTitle.SelectedItem.ToString();
+
+            emp.NewEmployee(emp);
+            LoadTable();
+            ClearAllTextBox();
+        }
     }
 }
  
